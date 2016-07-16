@@ -117,7 +117,7 @@ function displayInventory(askToQuitFlag){
                             })
                     }else{//not enough stock to cover this order
                         console.log(colors.red('Unfortunately at this time we do have enough stock on hand to fulfill this order'));
-                        console.log('You item you have choosen is '+itemInfo[0].ProductName +'\nThe quantity ordered is '+itemQty)
+                        console.log('The item you have choosen is '+itemInfo[0].ProductName +'\nThe quantity ordered is '+itemQty)
                         console.log('We only have '+itemInfo[0].StockQuantity +' on hand. ');
                         inquirer.prompt([{
                             name: "qty",
