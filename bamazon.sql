@@ -19,9 +19,9 @@ USE `bamazon`;
 -- Dumping structure for table bamazon.products
 CREATE TABLE IF NOT EXISTS `products` (
   `ItemID` int(10) NOT NULL,
-  `ProductName` varchar(50) NOT NULL,
-  `DepartmentName` varchar(50) NOT NULL,
-  `Price` decimal(10,2) NOT NULL,
+  `ProductName` varchar(30) NOT NULL,
+  `DepartmentName` varchar(20) NOT NULL,
+  `Price` decimal(7,2) NOT NULL,
   `StockQuantity` int(10) unsigned  NOT NULL,
   PRIMARY KEY (`ItemID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -34,6 +34,7 @@ REPLACE INTO `products` (`ItemID`, `ProductName`, `DepartmentName`, `Price`, `St
     (3,'Hammer', 'Hardware', 4.35, 0000000030),
     (4,'Milk', 'Food', 2.88, 0000000040),
     (5,'Dress', 'Clothing', 102.77, 0000000040),
+    (7,'Max Test Case xxxxxxxxxxxxxxxx', 'zzzzzzzzzzzzzzzzzzzz', 99999.98, 1000000040),
     (6,'Bread', 'Food', 1.39, 0000000060);
 /*!40000 ALTER TABLE `products` ENABLE KEYS */;
 
